@@ -1,0 +1,86 @@
+# 과일=[]
+# for i in range(5):
+#     f=input('과일명:')
+#     과일.append(f)
+# print(과일)
+
+#리스트 정렬 sort()
+# no=[4,5,8,1,2,9,3]
+# no.sort(reverse=True)
+# print(no)
+
+# no=['홍길동','철수','짱구']
+# no.sort()
+# print(no)
+
+# no=[12,3.5,10.123,8,10]
+# no.sort()
+# print(no)
+
+# # no1=no
+# no1=[12,3.5,10.123,8,10]
+# no1.reverse()
+# print(no1)
+
+# 인덱스
+# list=['a',2,'k',100]
+# print(list.index(100)) # list의 100이라는 요소의 인덱스인 3을 리턴.
+# print(list.index('없어')) #'없어'라는 요소가 list에 없으므로 오류 발생.
+
+# 인설트
+# no=[12,3.5,'a',10.123,8,10]
+# no.insert(no.index('a')+1,'b')
+# print(no)
+
+# no=[12,3.5,'a',10.123,8,10]
+# no.insert(len(no),'b')
+# print(len(no))
+
+# 리무브 remove
+# no=[12,3.5,'a',10.123,8,10,'a']
+# for data in no: # 반복문으로 'a'문자 모두 삭제
+#     if data == 'a':
+#         no.remove('a')
+# print(no)
+
+# 리스트 요소 끄집어 내기 - pop
+# no=[100,200,300,800,400,500]
+# no.pop() # 단순히 오른쪽 끝(마지막) 요소를 삭제하는것과 같다. no.remove(500) 단, 500이 여러개 있으면 pop과 다르다.
+# print(f'no={no}')
+
+# no=[100,200,300,800,400,500] # 일반적인 사용처
+# out=no.pop()
+# print(f'out={out},no={no}')
+
+# no=[100,200,300,800,400,500] # 인덱스 요소의 200만 제거
+# out=no.pop(no.index(200))
+# print(f'out={out},no={no}')
+
+# 리스트에 특정 요소의 개수 세기 - count메서드
+# no=[100,200,300,100,800,400,500,100]
+# cnt=no.count(100)
+# for i in range(cnt): # 100의 개수가 3개이기 때문에 cnt에 3의 변수가 들어가 즉, 3번 수행
+#     no.remove(100) #100을 모두 제거
+# print(no)
+
+# 리스트 확장 - extend
+# no=[1,2,3] # no=[1,2,3,4,5,6]
+# no.append=([4,5,6]) # 는 안된다 2차원이 되어버림
+# #for문 이용
+# for i in range(4,7):
+#     no.append(i)
+# print(no)
+# # extend 이용
+# no.extend([4,5,6])
+# print(no)
+# # +이용
+# no=no+[4,5,6]
+# print(no)
+
+# 튜플 - tuple
+# tu=(1,2,3)
+# li=list(tu) # tuple을 list로 바꿈
+# li[1]=10
+# print(li)
+# tu=tuple(li)
+# print(tu)
