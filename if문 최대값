@@ -1,0 +1,14 @@
+# a,b,c 변수에 값을 입력받아 중첩if문을 이용하여 세 변수 중 최대값을 출력.
+a=int(input('첫번째 정수 입력: '))
+b=int(input('두번째 정수 입력: '))
+c=int(input('세번째 정수 입력: '))
+if a > b:
+    if a > c:
+        max_value = a
+    else:
+        max_value = c
+elif b > c:
+    max_value = b
+else:
+    max_value = c
+print(f"최대값은: {max_value}입니다.")
