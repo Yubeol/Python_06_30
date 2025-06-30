@@ -1,0 +1,9 @@
+# for dan in range(2, 10, 2):
+#     print(f'== {dan}단==',end ='\t')
+# print()
+# i = 1
+# while i<=9:
+#     print(f'{dan}x{i}={dan * i}', end = '\t')
+#     i+=1
+# print()
+#
